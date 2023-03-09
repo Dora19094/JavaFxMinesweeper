@@ -69,12 +69,12 @@ public class MenuController {
             }
 
             //System.out.println(j);
-            WarningLabel.setText("OK!");
+            WarningLabel.setText("Good to go!");
             readyToStart = true;
 
         }catch(FileNotFoundException e){
             readyToStart = false;
-            WarningLabel.setText("File not found. Please try again!");
+            WarningLabel.setText("File not found.Try again!");
         }catch(InvalidDescriptionException e){
             readyToStart = false;
             WarningLabel.setText("Wrong desciption structure");
@@ -92,7 +92,7 @@ public class MenuController {
         root = loader.load();
         if (!readyToStart)
         {
-            WarningLabel.setText("Load a valid filename or create a valid game!");
+            WarningLabel.setText("Load filename or create game!");
             return;
         }
 
@@ -168,7 +168,7 @@ public class MenuController {
             writer.close();
             System.out.println("Data written to file successfully.");
             readyToStart = true;
-            WarningLabel.setText("OK!");
+            WarningLabel.setText("Good to go!");
 
         } catch (IOException e) {
             System.out.println("An error occurred while writing to the file.");
@@ -176,7 +176,7 @@ public class MenuController {
             e.printStackTrace();
         }catch(NullPointerException e){
             readyToStart = false;
-            WarningLabel.setText("File not found. Please try again!");
+            WarningLabel.setText("File not found.Try again!");
         }catch(InvalidDescriptionException e){
             readyToStart = false;
             WarningLabel.setText("Wrong desciption structure");
