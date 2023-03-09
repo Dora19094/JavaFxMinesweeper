@@ -318,7 +318,11 @@ public class GameController {
             @Override
             public void handle(ActionEvent actionEvent) {
                 if (secondsLeft <= 0)
+                {
                     gameEnd(true);
+                    return;
+                }
+
 
                 secondsLeft--;
                 //System.out.println(String.valueOf(numOfTries));
@@ -360,7 +364,7 @@ public class GameController {
 
     public void showScore(ActionEvent event) throws IOException{
         time.stop();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ScoreShow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ScorePage.fxml"));
         root = loader.load();
         ScoreController scoreController = loader.getController();
         scoreController.getDescription(this.dis);

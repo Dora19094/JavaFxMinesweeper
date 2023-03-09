@@ -38,7 +38,7 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="NewScenarioId" alignment="CENTER" layoutX="438.0" layoutY="117.0" prefHeight="28.0" prefWidth="122.0" promptText="scenarioID" style="-fx-background-color: #53917e; -fx-border-color: #c5e384; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="NewScenarioId" alignment="CENTER" layoutX="462.0" layoutY="117.0" prefHeight="28.0" prefWidth="74.0" promptText="scenarioID" style="-fx-background-color: #53917e; -fx-border-color: #c5e384; -fx-border-width: 0px 0px 2px 0px;" />
       <Label layoutX="263.0" layoutY="117.0" prefHeight="28.0" prefWidth="122.0" text="New scenario's ID:">
          <font>
             <Font size="15.0" />
@@ -50,13 +50,13 @@
          </font>
       </Label>
       <TextField fx:id="DifficultyLevel" alignment="CENTER" layoutX="467.0" layoutY="167.0" prefHeight="28.0" prefWidth="65.0" promptText="level" style="-fx-background-color: #53917e; -fx-border-color: #c5e384; -fx-border-width: 0px 0px 2px 0px;" />
-      <Label layoutX="263.0" layoutY="215.0" prefHeight="28.0" prefWidth="122.0" text="Mines number:">
+      <Label layoutX="263.0" layoutY="215.0" prefHeight="28.0" prefWidth="122.0" text="Number of mines:">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
       <TextField fx:id="MinesNumber" alignment="CENTER" layoutX="467.0" layoutY="215.0" prefHeight="28.0" prefWidth="65.0" promptText="mines" style="-fx-background-color: #53917e; -fx-border-color: #c5e384; -fx-border-width: 0px 0px 2px 0px;" />
-      <Label layoutX="263.0" layoutY="262.0" prefHeight="28.0" prefWidth="157.0" text="SuperMineAdded (0,1):">
+      <Label layoutX="263.0" layoutY="262.0" prefHeight="28.0" prefWidth="157.0" text="Super-Mine:">
          <font>
             <Font size="15.0" />
          </font>
