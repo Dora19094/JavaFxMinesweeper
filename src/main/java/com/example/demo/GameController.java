@@ -321,7 +321,7 @@ public class GameController {
                     gameEnd(true);
 
                 secondsLeft--;
-                System.out.println(String.valueOf(numOfTries));
+                //System.out.println(String.valueOf(numOfTries));
                 TimeLabel.setText(secondsLeft.toString());
             }
         });
