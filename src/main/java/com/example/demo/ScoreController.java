@@ -115,13 +115,13 @@ public class ScoreController {
 
     public void backToGame(ActionEvent event) throws IOException{
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Level1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("GamePage.fxml"));
         root = loader.load();
 
         GameController gameController = loader.getController();
         gameController.getDescription(this.des);
-        gameController.makeBoard();
         gameController.doTime();
+        gameController.makeBoard();
 
 
         stage = (Stage)mines1Label.getScene().getWindow();

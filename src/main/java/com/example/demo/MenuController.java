@@ -88,7 +88,7 @@ public class MenuController {
 
     public void startGame(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Level1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("GamePage.fxml"));
         root = loader.load();
         if (!readyToStart)
         {
@@ -98,8 +98,9 @@ public class MenuController {
 
         GameController gameController = loader.getController();
         gameController.getDescription(this.discription);
-        gameController.makeBoard();
         gameController.doTime();
+        gameController.makeBoard();
+
 
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

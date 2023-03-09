@@ -7,13 +7,19 @@ import javafx.scene.input.MouseEvent;
 
 public class Tile extends ImageView {
 
-    private boolean isFlagged = false, isMine = false, isSuperMine = false, isRevealed = false;
+    private boolean isFlagged = false, isMine, isSuperMine, isRevealed;
     private final int x, y;
     private int neighborMines = 0;
 
-    Tile(int x, int y){
+    Tile(int x, int y,double tileWidth){
         this.x = x;
         this.y = y;
+        this.setImage(new Image(getClass().getResourceAsStream("images/blank.png")));
+        this.setPreserveRatio(true);
+        this.setFitWidth(tileWidth);
+        this.setRevealed(false);
+        this.setMine(false);
+        this.setSuperMine(false);
     }
 
     public int getRow(){
@@ -40,12 +46,12 @@ public class Tile extends ImageView {
 
     public int neighborMines(){return this.neighborMines;}
 
-    public void setRevealed(){
-        this.isRevealed = true;
+    public void setRevealed(boolean r){
+        this.isRevealed = r;
     }
 
-    public void setMine(){
-        this.isMine = true;
+    public void setMine(boolean m){
+        this.isMine = m;
     }
 
     public void setFlagged(){
@@ -61,8 +67,8 @@ public class Tile extends ImageView {
         }
     }
 
-    public void setSuperMine(){
-        this.isSuperMine = true;
+    public void setSuperMine(boolean s){
+        this.isSuperMine = s;
     }
     public void addNeighborMine(){
         this.neighborMines++;

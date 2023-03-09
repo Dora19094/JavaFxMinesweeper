@@ -55,7 +55,7 @@
                 <Menu mnemonicParsing="false" style="-fx-border-color: black;" text="Menu">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#restartGame" text="Restart game" />
-                        <MenuItem mnemonicParsing="false" onAction="#quitGame" text="New game" />
+                        <MenuItem mnemonicParsing="false" onAction="#newGame" text="New game" />
                         <MenuItem mnemonicParsing="false" onAction="#exitGame" text="Exit" />
                      </items></Menu>
                   <Menu mnemonicParsing="false" style="-fx-border-color: black;" text="Details">

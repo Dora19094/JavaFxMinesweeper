@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -24,7 +23,7 @@ public class Main extends Application{
         Scene scene = new Scene(root);
         stage.setTitle("MediaLab Minesweeper");
 
-        Image icon = new Image("file:C:\\Users\\DORA\\IdeaProjects\\demo\\src\\main\\resources\\com\\example\\demo\\images\\minesweeper-thumbnail.png");
+        Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("images/minesweeper-thumbnail.png")));
         stage.getIcons().add(icon);
 
         stage.setScene(scene);
@@ -42,10 +41,10 @@ public class Main extends Application{
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Logout");
         alert.setHeaderText("You are about to logout!");
-        alert.setContentText("Do you want to save before exiting?");
+        alert.setContentText("Your score will be saved");
 
         if (alert.showAndWait().get() == ButtonType.OK){
-            System.out.print("You succesfully logged out");
+            System.out.print("You successfully logged out");
             stage.close();
         }
 
