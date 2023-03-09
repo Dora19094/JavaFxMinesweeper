@@ -1,0 +1,5 @@
+.idea
+src/main/resources/com/example/demo/mediaLabMines/mines.txt
+src/main/resources/com/example/demo/scoreSaver
+target/classes/com/example/demo/mediaLabMines/mines.txt
+target/classes/com/example/demo/scoreSaver
