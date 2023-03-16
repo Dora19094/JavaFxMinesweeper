@@ -181,7 +181,7 @@ public class GameController {
             while ((i = fr.readLine()) != null && i.length()>0)
                 lines++;
             fr.close();
-            System.out.println("The lines are: "+ lines+"\n");
+            //System.out.println("The lines are: "+ lines+"\n");
 
             if (lines < 5)
             {
