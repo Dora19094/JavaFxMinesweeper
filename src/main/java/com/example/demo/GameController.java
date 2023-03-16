@@ -338,7 +338,7 @@ public class GameController {
             for (int i =0;i<this.dimension;i++){
                 for (int j =0;j<this.dimension;j++){
                     if (this.tiles[i][j].hasMine())
-                        writer.write(String.valueOf(i) + "," + String.valueOf(j) + "," + String.valueOf((this.tiles[i][j].hasSuperMine() ==true)?1:0) + "\n");
+                        writer.write(String.valueOf(i+1) + "," + String.valueOf(j+1) + "," + String.valueOf((this.tiles[i][j].hasSuperMine() ==true)?1:0) + "\n");
                 }
             }
             writer.close();
